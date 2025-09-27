@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  color: #333;
+  padding-top: 56px; /* للتنقل الثابت */
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--dark-color) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.hero-section {
+  /* background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); */
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 5px solid white; */
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.2); */
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.skill-item {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn btn-light btn-lg {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.contact-info {
+  background-color: var(--light-color);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 30px 0;
+}
+
+/* تخصيصات للعرض على الجوال */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
