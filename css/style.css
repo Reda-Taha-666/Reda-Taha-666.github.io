@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
+  --primary-color: #3a86ff;
+  --secondary-color: #8338ec;
   --accent-color: #e74c3c;
   --light-color: #ecf0f1;
   --dark-color: #2c3e50;
@@ -76,6 +76,53 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Services */
+.services-section {
+  background: #1a237e;
+  /* padding: 80px 20px; */
+  padding: 100px 20px;
+  /* height: 100%; */
+}
+.services-section h2 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service-card {
+  background: #283593;
+  border-radius: 12px;
+  padding: 30px;
+  width: 270px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.service-card i {
+  font-size: 36px;
+  color: #bbdefb;
+  margin-bottom: 15px;
+}
+.service-card h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 15px;
+  color: #cfd8dc;
+  line-height: 1.5;
+}
+
 
 .project-card {
   border: none;
