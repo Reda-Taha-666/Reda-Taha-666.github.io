@@ -6,7 +6,7 @@
     <title>Reda Taha | Portfolio</title>
     <link
       rel="shortcut icon"
-      href="imeges/coding (1).png"
+      href="imeges/icon.webp"
       type="image/x-icon"
     />
     <!-- Bootstrap CSS -->
@@ -38,8 +38,8 @@
     <!-- شريط التنقل -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="imeges/coding.png" alt=""
+        <a class="navbar-brand" href="index.html#home"
+          ><img src="imeges/coding.webp" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -58,6 +58,9 @@
               <a class="nav-link" href="#about">من أنا</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#services">خدماتي</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#projects">المشاريع</a>
             </li>
             <li class="nav-item">
@@ -72,7 +75,7 @@
     <section id="home" class="hero-section">
       <div class="container">
         <!-- <img src="https://placehold.co/200x200/3498db/FFFFFF?text=رضا" alt="صورة رضا" class="profile-img mb-4"> -->
-        <img src="imeges/Reda.png" alt="صورة رضا" class="profile-img mb-4" />
+        <img src="imeges/Reda.webp" alt="صورة رضا" class="profile-img mb-4" />
         <h1 class="display-4 fw-bold">أنا رضا، مطور Python/Django</h1>
         <p class="lead mb-4">
           أقوم بتحويل الأفكار إلى تطبيقات ويب مبتكرة ووظيفية
@@ -89,7 +92,7 @@
           <div class="col-md-4 text-center mb-4 mb-md-0">
             <!-- <img src="https://placehold.co/300x300/3498db/FFFFFF?text=رضا" alt="صورة شخصية" class="img-fluid rounded-circle"> -->
             <img
-              src="imeges/Reda.png"
+              src="imeges/Reda.webp"
               alt="صورة شخصية"
               class="img-fluid rounded-circle"
             />
@@ -144,6 +147,35 @@
       </div>
     </section>
 
+    <!-- صفحه خدماتي -->
+  <section class="services-section" id="services">
+    <h2>خدماتنا </h2>
+    <div class="services-container">
+      <div class="service-card">
+        
+        <i class="fas fa-laptop-code"></i>
+
+        <h3>تصميم وتطوير المواقع</h3>
+        <p>أصمم مواقع متجاوبة تعكس هويتك أو هوية شركتك وتعرض خدماتك باحترافية.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>تطوير تطبيقات الويب</h3>
+        <p>أبني مواقع ديناميكية باستخدام Django و Python بواجهة سهلة الاستخدام وسرعة عالية.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-palette"></i>
+        <h3>تصميم واجهات وتجربة مستخدم (UI/UX)</h3>
+        <p>أصمم واجهات بسيطة وجذابة تركز على سهولة الاستخدام وجمال الشكل.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tools"></i>
+        <h3>صيانة وتطوير مستمر</h3>
+        <p>بقدّم خدمات تحديث وصيانة لمواقعك أو تطبيقاتك علشان تفضل شغالة بأمان وسرعة.</p>
+      </div>
+    </div>
+  </section>
+
     <!-- صفحة المشاريع -->
     <section id="projects" class="py-5 bg-light">
       <div class="container">
@@ -151,6 +183,28 @@
         <div class="row">
           <!-- مشروع 1 -->
           <div class="col-md-6 col-lg-4">
+            <div class="project-card card">
+              <img
+                src="imeges/project4.webp"
+                class="project-img card-img-top"
+                alt="مشروع To-Do List"
+              />
+              <div class="card-body">
+                <h5 class="card-title"> Future Code Academy</h5>
+                <p class="card-text">Future Code Academy هي أكاديمية للانطلاق في عالم البرمجة! توفر لك دورات عملية متقدمة تُناسب جميع المستويات،
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="https://redataha.pythonanywhere.com" class="btn btn-primary" target="_blank">عرض المشروع</a>
+                  <!-- <a href="https://github.com/Reda-Taha-666/Blog-" class="btn btn-outline-primary">
+                    <i class="fab fa-github"></i> GitHub
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- مشروع -->
+           <div class="col-md-6 col-lg-4">
             <div class="project-card card">
               <img
                 src="imeges/project1.png"
@@ -196,35 +250,16 @@
               </div>
             </div>
           </div>
-
-          <!-- مشروع 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="project-card card">
-              <img
-                src="imeges/project2.png"
-                class="project-img card-img-top"
-                alt="مشروع متجر"
-              />
-              <div class="card-body">
-                <h5 class="card-title">موقع شركة</h5>
-                <p class="card-text">موقع تعريفي لشركة برمجيات كاملة مصصم باستخدام Django .</p>
-                <div class="d-flex justify-content-between">
-                  <a href="projects/project3/index.html" class="btn btn-primary" target="_blank">عرض المشروع</a>
-                  <a href="https://github.com/Reda-Taha-666/Future-Code" class="btn btn-outline-primary">
-                    <i class="fab fa-github"></i> GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
+          
+        </div>
+        <a
             href="projectss.html"
             class="btn btn-light btn-lg"
             ; style="width: 200px; display: block;
-            margin: 0 auto; background-color :#3498db; color: #fff;"
+            margin: 0 auto; background-color :#3498db; color: #fff;
+            height: 50px;"
             >عرض المزيد ..
           </a>
-        </div>
       </div>
     </section>
 
@@ -264,12 +299,6 @@
                 <label for="email" class="form-label">البريد الإلكتروني</label>
                 <input type="email" class="form-control" name="email" id="email" required />
               </div>
-              
-              <div class="mb-3">
-                <label for="number" class="form-label">رقم الهاتف</label>
-                <input type="number" class="form-control" name="number" id="number" required />
-              </div>
-              
               <div class="mb-3">
                 <label for="message" class="form-label">الرسالة</label>
                 <textarea
