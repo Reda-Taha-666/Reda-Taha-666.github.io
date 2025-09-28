@@ -1,172 +1,228 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-header{
-    position: relative;
-    height: 100vh ;
-    width: 100%;
-   background-color: #e7f6fe;
-   
+
+/* Header */
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  flex-direction: column;
 }
-nav{
-    height: 16vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo h2{
-    font-size: 28px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #4d4d4d;
+.logo h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a237e;
 }
-.menu ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 40px;
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 .menu ul li a {
-    color: #4d4d4d;
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a237e;
+  transition: 0.3s;
 }
-.menu ul li a:hover{
-    color: #601cfc;
+.menu ul li a:hover {
+  color: #3949ab;
 }
 .btn a {
-    border: 1px solid #4d4d4d;
-    padding: 8px 22px;
-    color: #4d4d4d;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
+  border: 1px solid #1a237e;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #1a237e;
+  transition: 0.3s;
 }
-.btn a:hover{
-    background-color: #601cfc;
-    color: white;
-    transition: 0.4s;
+.btn a:hover {
+  background: #1a237e;
+  color: #fff;
 }
-.main{
-    width: 1280px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #1a237e;
+  cursor: pointer;
 }
-h1{
-    color: #363337;
-    font-size: 45px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+
+/* Hero */
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 50px;
 }
-p{
-    color: #4d4d4d;
-    line-height: 30px;
-    margin-bottom: 50px;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 40px;
 }
-.btn2{
-    border: 1px solid transparent;
-    background-color: #601cfc;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
+.text {
+  flex: 1;
 }
-.btn2:hover{
-    border: 1px solid #4d4d4d;
-    background-color: transparent;
-    color: #4d4d4d;
-    transition: 0.4s;
+.text h1 {
+  font-size: 42px;
+  color: #0d47a1;
+  margin-bottom: 20px;
 }
-img{
-    width: 400px;
-    height: 400px;
+.text p {
+  font-size: 16px;
+  color: #424242;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
+.btn2 {
+  background: #3949ab;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn2:hover {
+  background: transparent;
+  color: #1a237e;
+  border: 1px solid #1a237e;
+}
+.img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.img img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Social */
 .social {
-    position: absolute;
-    right: 70px;
-    bottom: 50px;
+  margin-top: 40px;
 }
-.social ul li{
-    list-style-type: none;
-    text-align: center;
-    margin-top: 20px;
+.social ul {
+  display: flex;
+  gap: 15px;
 }
-.social ul li a{
-    display: block;
-    color: #4d4d4d;
-    transition: 0.4s;
+.social ul li {
+  list-style: none;
 }
-.social ul li a:hover{
-    transform: scale(1.5);
+.social ul li a {
+  font-size: 20px;
+  color: #1a237e;
+  transition: transform 0.3s, color 0.3s;
+}
+.social ul li a:hover {
+  transform: scale(1.3);
+  color: #3949ab;
 }
 
-
-
-.services-section{
-    padding: 100px 0px;
-    background-color: #0a1f44;
+/* Services */
+.services-section {
+  background: #1a237e;
+  padding: 80px 20px;
 }
-.services-section h2{
-    font-size: 50px;
-    margin-bottom: 40px;
-    color: #fff;
-    text-align: center;
+.services-section h2 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.service-card{
-    background-color: #1e3c72;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 25px;
-    width: 300px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s ease;
+.service-card {
+  background: #283593;
+  border-radius: 12px;
+  padding: 30px;
+  width: 270px;
+  text-align: center;
+  transition: transform 0.3s;
 }
-.service-card:hover{
-    transform: translateY(-10px);
+.service-card:hover {
+  transform: translateY(-10px);
 }
-.service-card i{
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
+.service-card i {
+  font-size: 36px;
+  color: #bbdefb;
+  margin-bottom: 15px;
 }
-.service-card h3{
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 20px;
+.service-card h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 .service-card p {
-    font-size: 17px;
-    color: #cfcfcf;
+  font-size: 15px;
+  color: #cfd8dc;
+  line-height: 1.5;
 }
-/* تخصيصات للعرض على الجوال */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 60px 0;
-  }
 
-  .profile-img {
-    width: 150px;
-    height: 150px;
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .menu ul {
+    flex-direction: column;
+    display: none;
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .menu ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .text h1 {
+    font-size: 28px;
+  }
+  .services-section h2 {
+    font-size: 28px;
+  }
+  .service-card {
+    width: 100%;
   }
 }
