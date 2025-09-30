@@ -55,6 +55,8 @@ body {
     font-weight: 600;
     min-width: 280px;
     font-family: "Cairo", sans-serif;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .typing-text span{
@@ -248,5 +250,6 @@ footer {
     height: 150px;
   }
 }
+
 
 
