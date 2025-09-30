@@ -57,6 +57,7 @@ body {
     font-family: "Cairo", sans-serif;
     max-width: 100%;
     overflow: hidden;
+    white-space: normal;
 }
 
 .typing-text span{
@@ -249,7 +250,11 @@ footer {
     width: 150px;
     height: 150px;
   }
+  .typing-text{
+      font-size: 30px;
+  }
 }
+
 
 
 
