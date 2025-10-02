@@ -13,75 +13,84 @@ body {
   padding-top: 56px; /* للتنقل الثابت */
 }
 
-.navbar {
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* شكل الناف بار الأساسي */
-.navbar {
-  background-color: #fff;
+/* Navbar الأساسي */
+.custom-navbar {
+  background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   direction: rtl; /* علشان العربي */
+  padding: 10px 0;
 }
 
 .navbar-brand {
   font-weight: 700;
-  color: var(--dark-color) !important;
+  font-size: 22px;
+  color: var(--dark-color);
 }
 
+/* اللينكات في الديسكتوب */
+.nav-link {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* زر القائمة (الموبايل) */
 .navbar-toggler {
   border: none;
+  font-size: 24px;
+  color: var(--dark-color);
 }
-
-/* أيقونة زرار القائمة */
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-/* القائمة الجانبية (offcanvas) */
-.offcanvas {
-  background-color: #fff;
-  width: 250px; /* عرض القائمة */
-  border-radius: 0 10px 10px 0; /* زوايا ناعمة */
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+/* القائمة الجانبية */
+.custom-offcanvas {
+  direction: rtl;
+  width: 260px;
+  background: #fff;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* العنوان فوق القائمة */
-.offcanvas-header {
-  border-bottom: 1px solid #ddd;
-  padding: 15px;
+.custom-offcanvas .offcanvas-header {
+  border-bottom: 1px solid #eee;
 }
 
-.offcanvas-title {
+.custom-offcanvas .offcanvas-title {
   font-size: 20px;
   font-weight: 700;
   color: var(--dark-color);
 }
 
-/* روابط القائمة */
-.offcanvas .nav-link {
+.custom-offcanvas .nav-link {
   font-size: 18px;
   font-weight: 600;
-  margin: 8px 0;
-  padding: 10px 15px;
-  color: var(--dark-color) !important;
+  margin: 10px 0;
+  padding: 10px;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  color: var(--dark-color);
+  transition: 0.3s;
 }
 
-/* تأثير hover */
-.offcanvas .nav-link:hover {
-  background-color: var(--primary-color);
-  color: #fff !important;
-  transform: translateX(5px); /* حركة صغيرة */
+.custom-offcanvas .nav-link:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateX(5px);
 }
 
 /* زر الإغلاق */
-.offcanvas .btn-close {
-  outline: none;
+.custom-offcanvas .btn-close {
   box-shadow: none;
+  outline: none;
 }
+
+
+
 
 
 .hero-section {
@@ -310,6 +319,7 @@ footer {
       font-size: 30px;
   }
 }
+
 
 
 
